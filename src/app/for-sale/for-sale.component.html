@@ -1,0 +1,7 @@
+<h2>For Sale</h2>
+
+<div *ngFor="let item of items" (click)="goToDetailPage(item)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{item.name}}</em> for ${{item.price}}</h3>
+  </div>
+</div>
